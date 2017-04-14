@@ -141,24 +141,152 @@ header{
 }
 
 .cover .cover-heading{
-	width: 30%
-}
-
-.cover h1{
 	position: relative;
 	top: 20%;
 	left: 10%;
+	width: 35%;
+}
+
+.cover-heading h1{
 	color: #fff;
 	font-family: sans-serif;
 	font-size: 3.5em;
 }
 
-.cover p{
-	position: relative;
-	top: 20%;
-	left: 10%;
+.cover-heading p{
 	margin-top: 5px;
 	color: #fff;
 	font-family: sans-serif;
 	font-size: 1.4em;
+}
+
+section.our-services{
+	padding-top: 80px;
+}
+
+.our-services h1{
+	margin-bottom: 20px;
+	color: #000;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 3em;
+}
+
+.our-services > p{
+	margin-bottom: 50px;
+	color: #A9A9A9;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 1.2em;
+}
+
+.services-lists{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 80px;
+	padding: 10px 0.5%;
+	width: 80%;
+	overflow: auto;
+}
+
+.services-list-item{
+	position: relative;
+	padding: 70px 2.5%;
+	float: left;
+	width:26%;
+	text-align: center;
+	transition: padding 0.5s;
+}
+
+.services-list-item:nth-child(2){
+	margin-left: 10.5%;
+	margin-right: 10.5%;
+}
+
+.services-list-item::before, .services-list-item::after{
+	content: ' ';
+	position: absolute;
+	width:90%;
+	height: 90%;
+	transition: all 0.5s;	
+}
+
+.services-list-item::before{
+	top: 0;
+	left: 0;
+	border-top: 2px solid #e5e7e9;
+	border-left: 2px solid #e5e7e9;
+}
+
+.services-list-item::after{
+	bottom: 0;
+	right: 0;
+	border-bottom: 2px solid #e5e7e9;
+	border-right: 2px solid #e5e7e9;
+}
+
+.services-list-item .list-top{
+	margin-bottom: 10px;
+	transition: all 0.5s;
+}
+
+.services-list-item .list-top img{
+	margin-bottom: 5px;
+}
+
+.services-list-item .list-top h2{
+	font-family: sans-serif;
+	font-size: 1.2em;
+}
+
+.services-list-item .divider{
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	height: 2px;
+	background-color: #93c83f;
+	transition: all 0.5s;
+}
+
+.services-list-item .list-body{
+	margin-top: 10px;
+	transition: all 0.5s;
+}
+
+.services-list-item .list-body p{
+	padding: 0px 5%;
+	color: #A9A9A9;
+	line-height: 22px;
+}
+
+.services-list-item:hover .divider{
+	width: 80%;
+}
+
+.services-list-item:hover .list-top{
+	margin-bottom: 20px;
+}
+
+.services-list-item:hover .list-body{
+	margin-top: 20px;
+}
+
+.services-list-item:hover{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.services-list-item:hover::before, .services-list-item:hover::after{
+	width: 100%;
+	height: 100%;
+	border-color: #93c83f;
+}
+
+section.about-us{
+	width: 100%;
+	height: 500px;
+	background-image: url("http://placehold.it/1920X1000");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
