@@ -12,6 +12,10 @@
 	width: 80%;
 }
 
+section{
+	padding: 80px 0;
+}
+
 /*------------------------
 		HEADER
 --------------------------*/
@@ -26,7 +30,7 @@ header{
 	line-height: 50px;
 }
 
-.header-bar .container{
+.header-bar-container{
 	display: flex;
 }
 
@@ -215,10 +219,6 @@ button.make-appointment:hover{
 		OUR-SERVICES SECTION
 -----------------------------------*/
 
-section.our-services{
-	padding: 80px 0px;
-}
-
 .our-services h1{
 	margin-bottom: 20px;
 	color: #000;
@@ -342,7 +342,6 @@ section.our-services{
 ---------------------------------*/
 
 section.about-us{
-	padding: 80px 0px;
 	width: 100%;
 	background-image: url("http://placehold.it/1920X1000");
 	background-repeat: no-repeat;
@@ -444,6 +443,73 @@ section.about-us{
 		TAX-CALCULATOR SECTION
 ----------------------------------*/
 
-section.tax-calculator{
-	padding: 80px 0;
+.tax-calc-container{
+	display: flex;
 }
+
+.tax-calc-form{
+	width: 60%;
+}
+
+.tax-calc-image{
+	margin-left: 15%;
+	width: 40%;
+}
+
+.tax-calc-heading h1{
+	font-family: sans-serif;
+	font-size: 2.5em;
+}
+
+.tax-calc-heading h1 span.fa-stack{
+	margin-right: 10px;
+	color: #a9a9a9;
+	font-size: 0.67em;
+}
+
+form[name="tax-calculation"]{
+	margin-top: 25px;
+}
+
+.form-group-set{
+	display: flex;
+	margin-bottom: 25px;
+}
+
+.form-group{
+	width: 50%;
+}
+
+.form-group label{
+	display: block;
+	margin-bottom: 5px;
+	color: #9f9f9f;
+	font-family: sans-serif;
+}
+
+.form-control{
+	padding: 0 15px;
+	width: 80%;
+	height: 50px;
+	line-height: 50px;
+	color: #9f9f9f;
+	font-family: sans-serif;
+	background-color: #f2f3f8;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+}
+
+select.form-control{
+	appearance: none;
+	-webkit-appearance: none;
+}
+
+input.form-control[name="total-payment"]{
+	border-bottom: 3px solid #93c83f;
+}
+
+/*---------------------------------
+		TESTIMONIALS SECTION
+-----------------------------------*/
+

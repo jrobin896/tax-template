@@ -10,7 +10,7 @@
 <body>
 	<header>
 		<div class="header-bar">
-			<div class="container">
+			<div class="header-bar-container container">
 				<div class="details">
 					<ul>
 						<li><span class="fa fa-map-marker fa-lg"></span><a href="#">267 Park Avenue New York, NY 90210</a></li>
@@ -153,17 +153,71 @@
 		</div>
 	</section> 
 
-	<section class="tax-calculator">
-		<div class="tax-calculator-form">
-			<div class="section-header">
-				<span class="fa fa-cogs"></span>
-				<h1>Tax Calculator</h1>
+	<section class="tax-calc">
+		<div class="tax-calc-container container">
+			<div class="tax-calc-form">
+				<div class="tax-calc-heading">
+					<h1>
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-square-o fa-stack-2x"></i>
+							<i class="fa fa-bank fa-stack-1x"></i>
+						</span>
+						Tax Calculator
+					</h1>
+				</div>
+
+				<form name="tax-calculation">
+					<div class="form-group-set">
+						<div class="form-group">
+							<label for="business-area">Choose your business area</label>
+							<select name="business-area" class="form-control" id="business-area">
+								<option value="retail">Retail</option>
+								<option value="all">All</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="residence-country">Country of residence</label>
+							<select name="residence-country" class="form-control" id="residence-country">
+								<option value="usResidence">US Residence</option>
+								<option value="all">All</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group-set">
+						<div class="form-group">
+							<label for="employee-number">Employees number</label>
+							<select type="" name="employee-number" class="form-control" id="employee-number">
+								<option value="1-5">1-5</option>
+								<option value="1-6">1-6</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="yearly-income">Yearly Income</label>
+							<input type="text" name="yearly-income" class="form-control" id="yearly-income">
+						</div>
+					</div>
+
+					<div class="form-group-set">
+						<div class="form-group">
+							<label for="total-payment">Total Payment</label>
+							<input type="text" name="total-payment" class="form-control" id="total-payment">
+						</div>						
+					</div>
+				</form>
+			</div>
+
+			<div class="tax-calc-image">
+				<img src="http://placehold.it/400X400">
 			</div>
 		</div>
+	</section>
 
-		<div class="image-content">
-			<img src="http://placehold.it/500X500">
-		</div>
+	<section class="testimonials">
+		<div class="grey-bg"></div>
+		<div class="blue-bg"></div>		
 	</section>
 </body>
 </html>
